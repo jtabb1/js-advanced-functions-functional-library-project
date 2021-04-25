@@ -48,8 +48,6 @@ describe('index.js', function () {
       expect(arraysEqual(testArr, unmodifiedTestArr)).to.equal(true);
     })
 
-
-
     it('successfully returns a correctly populated array from modified object values', function () {
       const objResult = fi.map(testObj, callback)
       expect(arraysEqual([3, 6, 9, 12], objResult)).to.equal(true);
