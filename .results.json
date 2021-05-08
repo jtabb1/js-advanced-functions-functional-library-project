@@ -2,12 +2,12 @@
   "stats": {
     "suites": 16,
     "tests": 34,
-    "passes": 27,
+    "passes": 34,
     "pending": 0,
-    "failures": 7,
-    "start": "2021-04-25T04:08:07.290Z",
-    "end": "2021-04-25T04:08:07.588Z",
-    "duration": 298
+    "failures": 0,
+    "start": "2021-05-08T18:03:31.234Z",
+    "end": "2021-05-08T18:03:31.508Z",
+    "duration": 274
   },
   "tests": [
     {
@@ -20,14 +20,14 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js each returns the original collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -83,14 +83,14 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -132,7 +132,7 @@
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js first returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -153,7 +153,7 @@
     {
       "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
       "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -174,14 +174,14 @@
     {
       "title": "does not modify the original arrays",
       "fullTitle": "index.js sortBy does not modify the original arrays",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -190,55 +190,40 @@
       "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:219:26)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.flatten is not a function"
-      }
+      "err": {}
     },
     {
       "title": "correctly flattens a single level when a second argument of \"true\" is passed",
       "fullTitle": "index.js flatten correctly flattens a single level when a second argument of \"true\" is passed",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:225:26)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.flatten is not a function"
-      }
+      "err": {}
     },
     {
       "title": "removes duplicate values from an array",
       "fullTitle": "index.js uniq removes duplicate values from an array",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.uniq is not a function\n    at Context.<anonymous> (test/indexTest.js:237:29)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.uniq is not a function"
-      }
+      "err": {}
     },
     {
       "title": "removes duplicate values from an array when an iteratee is applied",
       "fullTitle": "index.js uniq removes duplicate values from an array when an iteratee is applied",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.uniq is not a function\n    at Context.<anonymous> (test/indexTest.js:242:25)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.uniq is not a function"
-      }
+      "err": {}
     },
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js keys retrieves all the names of the object's own enumerable properties",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.keys is not a function\n    at Context.<anonymous> (test/indexTest.js:253:29)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.keys is not a function"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js keys does not modify the original object you crazy DOGE!",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -247,10 +232,7 @@
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.values is not a function\n    at Context.<anonymous> (test/indexTest.js:266:29)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.values is not a function"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
@@ -262,87 +244,13 @@
     {
       "title": "returns a sorted collection of the names of every method in an object",
       "fullTitle": "index.js functions returns a sorted collection of the names of every method in an object",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:293:12)\n    at Context.<anonymous> (test/indexTest.js:287:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
+      "err": {}
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "correctly flattens a ludicrously nested array",
-      "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:219:26)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.flatten is not a function"
-      }
-    },
-    {
-      "title": "correctly flattens a single level when a second argument of \"true\" is passed",
-      "fullTitle": "index.js flatten correctly flattens a single level when a second argument of \"true\" is passed",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:225:26)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.flatten is not a function"
-      }
-    },
-    {
-      "title": "removes duplicate values from an array",
-      "fullTitle": "index.js uniq removes duplicate values from an array",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.uniq is not a function\n    at Context.<anonymous> (test/indexTest.js:237:29)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.uniq is not a function"
-      }
-    },
-    {
-      "title": "removes duplicate values from an array when an iteratee is applied",
-      "fullTitle": "index.js uniq removes duplicate values from an array when an iteratee is applied",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.uniq is not a function\n    at Context.<anonymous> (test/indexTest.js:242:25)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.uniq is not a function"
-      }
-    },
-    {
-      "title": "retrieves all the names of the object's own enumerable properties",
-      "fullTitle": "index.js keys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.keys is not a function\n    at Context.<anonymous> (test/indexTest.js:253:29)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.keys is not a function"
-      }
-    },
-    {
-      "title": "retrieves all the values of the object's own properties",
-      "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.values is not a function\n    at Context.<anonymous> (test/indexTest.js:266:29)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "fi.values is not a function"
-      }
-    },
-    {
-      "title": "returns a sorted collection of the names of every method in an object",
-      "fullTitle": "index.js functions returns a sorted collection of the names of every method in an object",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:293:12)\n    at Context.<anonymous> (test/indexTest.js:287:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "calls alert with each element passed",
@@ -354,14 +262,14 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js each returns the original collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -417,14 +325,14 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -466,7 +374,7 @@
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js first returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -487,7 +395,7 @@
     {
       "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
       "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -508,27 +416,76 @@
     {
       "title": "does not modify the original arrays",
       "fullTitle": "index.js sortBy does not modify the original arrays",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 1,
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly flattens a ludicrously nested array",
+      "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly flattens a single level when a second argument of \"true\" is passed",
+      "fullTitle": "index.js flatten correctly flattens a single level when a second argument of \"true\" is passed",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removes duplicate values from an array",
+      "fullTitle": "index.js uniq removes duplicate values from an array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removes duplicate values from an array when an iteratee is applied",
+      "fullTitle": "index.js uniq removes duplicate values from an array when an iteratee is applied",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "retrieves all the names of the object's own enumerable properties",
+      "fullTitle": "index.js keys retrieves all the names of the object's own enumerable properties",
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js keys does not modify the original object you crazy DOGE!",
-      "duration": 1,
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "retrieves all the values of the object's own properties",
+      "fullTitle": "index.js values retrieves all the values of the object's own properties",
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object you crazy DOGE!",
       "fullTitle": "index.js values does not modify the original object you crazy DOGE!",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a sorted collection of the names of every method in an object",
+      "fullTitle": "index.js functions returns a sorted collection of the names of every method in an object",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
